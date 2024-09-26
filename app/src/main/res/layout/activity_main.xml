@@ -27,6 +27,7 @@
         android:valueFrom="1"
         android:valueTo="255"
         android:stepSize="1"
+        android:contentDescription="redColor"
 
 
 
@@ -51,6 +52,7 @@
         android:valueTo="255"
         android:stepSize="1"
         android:layout_below="@id/redSlider"
+        android:contentDescription="greenColor"
         />
 
     <TextView
@@ -71,6 +73,7 @@
         android:valueTo="255"
         android:stepSize="1"
         android:layout_below="@id/greenSlider"
+        android:contentDescription="blueColor"
         />
 
     <TextView

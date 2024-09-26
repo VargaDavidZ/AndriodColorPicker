@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private FrameLayout colorSpace;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

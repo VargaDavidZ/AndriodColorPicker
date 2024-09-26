@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(0;0;0)"
+        android:textSize="25sp"
+        android:id="@+id/textViewColor"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+
+        />
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/redSlider"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="255"
+        android:stepSize="1"
+
+
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_toEndOf="@id/redSlider"
+        android:id="@+id/redText"
+        android:text="0"
+        android:textSize="25sp"
+        />
+
+
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenSlider"
+        android:valueFrom="1"
+        android:valueTo="255"
+        android:stepSize="1"
+        android:layout_below="@id/redSlider"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/redText"
+        android:layout_toEndOf="@id/redSlider"
+        android:id="@+id/greenText"
+        android:text="0"
+        android:textSize="25sp"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueSlider"
+        android:valueFrom="1"
+        android:valueTo="255"
+        android:stepSize="1"
+        android:layout_below="@id/greenSlider"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/greenText"
+        android:layout_toEndOf="@id/redSlider"
+        android:id="@+id/blueText"
+        android:text="0"
+        android:textSize="25sp"
+        />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewColor"
+        android:id="@+id/colorSpace"
+    />
+
+
+</RelativeLayout>
+
+
+
+
